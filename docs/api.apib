@@ -4,18 +4,20 @@ HOST: http://tools.api/v1
 # Tools API
 
 Tools API é uma API simples que possibilida listar, consultar, criar ou deletar ferramentas.
+<br>
+A API deve responder na **porta 3000**
 
-# Group URLs
+# Group Endpoints
 
-URLs existentes da API
+Endpoints existentes da API
 
 ## Tools [/tools]
 
 ### Listar todas ferramentas [GET]
 
-+ Response 200 (application/json)
++ Response 200 
 
-        [
+        {
             {
                 id: 1,
                 title: "Notion",
@@ -57,7 +59,7 @@ URLs existentes da API
                     "localhost"
                 ]
             }
-        ]
+        }
 
 ### Criar nova ferramenta [POST]
 
@@ -93,55 +95,47 @@ URLs existentes da API
 
 + Response 200
 
-        Headers
-                Content-type: application/json
-
-        Body
-
-                {
-
-                }
-
+        {}
 
 ## Filtrar ferramentas por tag [/tools?tag={tag}]
 
 + Parameters 
     + tag: node(string, required) - tag que deseja filtrar
 
-### Filtarr ferramenta por tag [GET]
+### Filtrar ferramentas por tag [GET]
 
 + Response 200
 
-            [
             {
-                id: 2,
-                title: "json-server",
-                link: "https://github.com/typicode/json-server",
-                description: "Fake REST API based on a json schema. Useful for mocking and creating APIs for front-end devs to consume in coding challenges.",
-                tags: [
-                    "api",
-                    "json",
-                    "schema",
-                    "node",
-                    "github",
-                    "rest"
-                ]
-            },
-            {
-                id: 3,
-                title: "fastify",
-                link: "https://www.fastify.io/",
-                description: "Extremely fast and simple, low-overhead web framework for NodeJS. Supports HTTP2.",
-                tags: [
-                    "web",
-                    "framework",
-                    "node",
-                    "http2",
-                    "https",
-                    "localhost"
-                ]
+                {
+                    id: 2,
+                    title: "json-server",
+                    link: "https://github.com/typicode/json-server",
+                    description: "Fake REST API based on a json schema. Useful for mocking and creating APIs for front-end devs to consume in coding challenges.",
+                    tags: [
+                        "api",
+                        "json",
+                        "schema",
+                        "node",
+                        "github",
+                        "rest"
+                    ]
+                },
+                {
+                    id: 3,
+                    title: "fastify",
+                    link: "https://www.fastify.io/",
+                    description: "Extremely fast and simple, low-overhead web framework for NodeJS. Supports HTTP2.",
+                    tags: [
+                        "web",
+                        "framework",
+                        "node",
+                        "http2",
+                        "https",
+                        "localhost"
+                    ]
+                }
             }
-        ]
 
 
 
