@@ -1,10 +1,8 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/MineBubble/tools_api/db"
-	"github.com/MineBubble/tools_api/models"
+	"github.com/MineBubble/tools_api/handlers"
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,18 +10,9 @@ func main() {
 	db.Init()
 
 	router := gin.Default()
-	router.GET("/tools", ListarFerramentas)
+	router.GET("/tools", handlers.ListarFerramentas)
+	router.DELETE("/tools/:id", handlers.DeletarFerramenta)
 
 	router.Run(":3000")
 
-}
-
-func ListarFerramentas(c *gin.Context) {
-	var tools []models.Tool
-	if err := db.DB.Find(&tools).Error; err != nil {
-		c.AbortWithStatus(500)
-		fmt.Println(err)
-	} else {
-		c.JSON(200, tools)
-	}
 }

@@ -10,7 +10,7 @@
 - [x] Listar todas as ferramentas
 - [ ] Filtar ferramenta por tag
 - [ ] Cadastrar nova ferramenta
-- [ ] Remover ferramente por ID
+- [x] Remover ferramente por ID
 
 ### Conclusão
 
