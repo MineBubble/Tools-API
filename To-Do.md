@@ -1,7 +1,7 @@
 ## To-Do
 
 - [x] Documentar API com API Blueprint
-- [ ] Criar Banco de Dados
+- [x] Criar Banco de Dados
 
 ### API
 
