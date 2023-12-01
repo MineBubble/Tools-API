@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 
-var db *gorm.DB
+var DB *gorm.DB
 
 func Init() {
 	stringConnection := "host=localhost port=5432 user=postgres password=admin dbname=tools_api"
@@ -17,7 +17,7 @@ func Init() {
 		fmt.Println("Erro na conexão")
 	}
 
-	db = database
+	DB = database
 
 	fmt.Println("Conexão bem sucedida!")
 }
