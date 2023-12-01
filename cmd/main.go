@@ -11,6 +11,7 @@ func main() {
 
 	router := gin.Default()
 	router.GET("/tools", handlers.ListarFerramentas)
+	router.POST("/tools", handlers.CriarFerramenta)
 	router.DELETE("/tools/:id", handlers.DeletarFerramenta)
 
 	router.Run(":3000")
