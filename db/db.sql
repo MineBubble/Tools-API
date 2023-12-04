@@ -5,7 +5,7 @@ create table tools(
 	title varchar(64),
 	link varchar(255),
 	description varchar(512),
-	tags text[]
+	tags varchar[]
 );
 
 insert into tools(title, link, description, tags) 
