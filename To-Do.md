@@ -8,8 +8,8 @@
 - [x] Definir porta 3000 como padrão
 - [x] Conectar-se com Banco de Dados
 - [x] Listar todas as ferramentas
-- [ ] Filtar ferramenta por tag
-- [ ] Cadastrar nova ferramenta
+- [x] Filtar ferramenta por tag
+- [x] Cadastrar nova ferramenta
 - [x] Remover ferramente por ID
 
 ### Conclusão

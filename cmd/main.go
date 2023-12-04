@@ -10,7 +10,7 @@ func main() {
 	db.Init()
 
 	router := gin.Default()
-	router.GET("/tools", handlers.ListarFerramentas)
+	router.GET("/tools", handlers.ListarFiltrar)
 	router.POST("/tools", handlers.CriarFerramenta)
 	router.DELETE("/tools/:id", handlers.DeletarFerramenta)
 
