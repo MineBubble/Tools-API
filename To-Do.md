@@ -14,7 +14,7 @@
 
 ### Conclusão
 
-- [ ] Escrever Documentação do projeto
+- [x] Escrever Documentação do projeto
  
 ### Bônus
 - [ ] Uso de ferramentas externas que facilitem o seu trabalho;
